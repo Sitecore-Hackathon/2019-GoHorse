@@ -190,7 +190,7 @@ namespace FaceLogin.Foundation.XConnect.Services
             }
         }
 
-        public bool UpdateContactBookshelfConsent(Contact contact, bool consent)
+        public bool UpdateContactConsent(Contact contact, bool consent)
         {
             using (var client = Sitecore.XConnect.Client.Configuration.SitecoreXConnectClientConfiguration.GetClient())
             {
@@ -300,6 +300,40 @@ namespace FaceLogin.Foundation.XConnect.Services
             Sitecore.Analytics.Tracker.Current.Session.IdentifyAs(identifierName, identifierValue);
             Sitecore.Analytics.Tracker.Current.Session.Contact =
                 manager.LoadContact(Sitecore.Analytics.Tracker.Current.Contact.ContactId);            
+        }
+
+        public bool UpdateContactPersonal(Contact contact, string firstName, string lastName)
+        {
+            using (var client = Sitecore.XConnect.Client.Configuration.SitecoreXConnectClientConfiguration.GetClient())
+            {
+                try
+                {
+                    // Retrieve contact
+                    if (contact == null)
+                        return false;
+
+                    // Retrieve facet (or create one)
+                    var facet = contact.GetFacet<PersonalInformation>(PersonalInformation.DefaultFacetKey) ??
+                                new PersonalInformation();
+
+                    // Change facet properties
+                    facet.FirstName = firstName;
+                    facet.LastName = lastName;
+
+                    // Set the updated facet
+                    client.SetFacet(contact, PersonalInformation.DefaultFacetKey, facet);
+                    client.Submit();
+                    return true;
+                }
+                catch (XdbExecutionException ex)
+                {
+                    // Manage exception
+                    Sitecore.Diagnostics.Log.Error(
+                        $"[FaceLogin] Error saving contact.",
+                        ex, ex.GetType());
+                    return false;
+                }
+            }
         }
     }
 }

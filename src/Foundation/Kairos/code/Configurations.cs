@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace FaceLogin.Foundation.Kairos
+﻿namespace FaceLogin.Foundation.Kairos
 {
     public static class Configurations
     {
@@ -14,10 +9,13 @@ namespace FaceLogin.Foundation.Kairos
             public const string KairosApplicationKey = "FaceLogin.Kairos_ApplicationKey";
             public const string MinimumConfidence = "FaceLogin.MinimumConfidence";
             public const string MinimumQuality = "FaceLogin.MinimumQuality";
+            public const string XConnectFaceIdentifierName = "FaceLogin.XConnect.FaceIdentifierName";
         }
 
         public struct Config
         {
+            public static string XConnectFaceIdentifierName =>
+                Sitecore.Configuration.Settings.GetSetting(ConfigKeys.XConnectFaceIdentifierName, "FaceLogin");
             public static string KairosGalleryName =>
                 Sitecore.Configuration.Settings.GetSetting(ConfigKeys.KairosGalleryName, "FaceLogin");
             public static string ApplicationId =>
