@@ -299,7 +299,7 @@ namespace FaceLogin.Foundation.XConnect.Services
 
             Sitecore.Analytics.Tracker.Current.Session.IdentifyAs(identifierName, identifierValue);
             Sitecore.Analytics.Tracker.Current.Session.Contact =
-                manager.LoadContact(Sitecore.Analytics.Tracker.Current.Contact.ContactId);
+                manager.LoadContact(Sitecore.Analytics.Tracker.Current.Contact.ContactId);            
         }
     }
 }
