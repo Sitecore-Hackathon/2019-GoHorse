@@ -88,12 +88,6 @@ Click on the button "Face login" , the application will tae your picture and sen
 
 ![Login Successful](images/loginsuccessful.jpg?raw=true "Successful")
 
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
-
-You can embed images of different formats too:
-
-![Go Horse](https://errorcotidianam.files.wordpress.com/2019/03/go-horse-style-1.png "Go Horse")
-
 ## Video
 
 Please provide a video highlighing your Hackathon module submission and provide a link to the video. Either a [direct link](https://www.youtube.com/watch?v=EpNhxW4pNKk) to the video, upload it to this documentation folder or maybe upload it to Youtube...
