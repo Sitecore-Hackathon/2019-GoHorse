@@ -41,20 +41,29 @@ Once the module is configured, update the entries `FaceLogin.Kairos_ApplicationI
 ```
 
 ## Usage
+Sign-in Step
+Access "Account" page on your local Sitecore Instance Example :https://sc910.sc/account (make sure you use HTTPS, it's a requirement)
+Fill the avaliable fields, And select the Image (This image must be a selfie)
+It's important to check " I agree to use my picture for Face Login", this is a important field that will be used.
+Click on the "Save action"
+The Page will reload, and show up your picture
 
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
+![[Account Page](images/account.jpg?raw=true "facelogin")
 
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
+Authentication Step 
+Access "Login" page on your local Sitecore Instace Ex : https://sc910.sc/login (make sure you use HTTPS, it's a requirement)
+The Browser should ask permission to acess your camera and take your picture, Click "Allow" (this step will fail if you are under http)
+Click on the button "Face login" , the application will tae your picture and send you to another page in case of success
 
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
+![[Login Page](images/facelogin.jpg?raw=true "facelogin")
+
+![Login Successful](images/LoginSuccessful.jpg?raw=true "Successful")
+
+![Hackathon Logo](images/hackathon.jpg?raw=true "Hackathon Logo")
 
 You can embed images of different formats too:
 
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://placeimg.com/480/240/any "Random")
+![Go Horse](https://errorcotidianam.files.wordpress.com/2019/03/go-horse-style-1.png "Go Horse")
 
 ## Video
 
