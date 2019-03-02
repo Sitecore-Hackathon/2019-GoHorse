@@ -1,0 +1,185 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Face Login</PackageName>
+      <Author>Go Horse</Author>
+      <Version>1.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/templates/System/Forms/Fields/Face Login/{D25FAD51-901B-462D-BEE8-C778BB3DBDCF}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Forms/Fields/Face Login/Contact Avatar/__Standard Values/{6FD921EB-2573-44F7-AC86-DF3F4F86A41B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Forms/Fields/Face Login/Contact Avatar/{AC71B6E9-D6A6-4849-A0DE-E6AB625656AD}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Forms/Fields/Face Login/Contact Avatar/Contact Avatar/{1A626E33-6994-486A-9970-96365C0CBCE1}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Forms/Fields/Face Login/Contact Avatar/Contact Avatar/Extra Parameters/{058E5DA9-D56F-44B7-9ED9-0B0ED0DBDF63}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Forms/Fields/Face Login/Contact Avatar/Contact Avatar/Thumbnail Height/{52A66B83-4217-46E6-BE44-D9D9E566ED66}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Forms/Fields/Face Login/Contact Avatar/Contact Avatar/Thumbnail Width/{2FD66A23-F524-4859-928F-87B8DE4F4D4E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Forms/Fields/Face Login/Upload Contact Avatar/__Standard Values/{C9098C58-62BB-4E2E-82DE-AEE6012392D2}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Forms/Fields/Face Login/Upload Contact Avatar/{5D11083F-CD1E-47F8-B0B4-E61C5CE06DF2}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Templates</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Settings/Forms/Field Types/Basic/Adhere to Face Login/{C9C99334-E562-4CFB-9581-D45D541FE9FE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Forms/Field Types/Basic/Contact Avatar/{831D89B9-4E37-40CE-B937-97862610C227}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Forms/Field Types/Basic/Upload Contact Avatar/{4FF8FFC4-73E8-48BE-846A-AF94616B2451}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Forms/Submit Actions/Face Login/{F3CB23C1-9F04-4171-B5D0-E58D3EF6ED35}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Forms/Submit Actions/Face Login/Adhere to Face Login/{83B53173-A25A-43E0-9FA6-A506933F23DA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Forms/Submit Actions/Face Login/Upload Contact Avatar/{49821FB1-CDD2-4264-87E0-BB9D654C25FF}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>System</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/layout/Layouts/Project/{DA04B275-8838-4A3A-AFEE-817CF1FDD2EB}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Layouts/Project/Default Form Layout/{9352B091-F826-41EC-9EE7-B12986641C6A}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/{DA61AD50-8FDB-4252-A68F-B4470B1C9FE8}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Login/{8A594BA6-37A2-4798-8734-E088D8A4BBBB}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Login/Face Login/{9385BA11-C310-4F4D-92EF-901A9ABB16B6}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Layouts</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/Forms/My Account/{550C4DDA-A245-4FDC-8513-0E06BB2C921B}/invariant/0</x-item>
+        <x-item>/master/sitecore/Forms/My Account/Page/{A5E9B77A-10E1-4B62-BAD9-33DCF24EFA65}/invariant/0</x-item>
+        <x-item>/master/sitecore/Forms/My Account/Page/adhere/{430F93ED-DB64-4002-863A-E962865348BC}/invariant/0</x-item>
+        <x-item>/master/sitecore/Forms/My Account/Page/Contact Avatar/{A7A9059A-0E1B-416C-B788-F943D86794FD}/invariant/0</x-item>
+        <x-item>/master/sitecore/Forms/My Account/Page/firstName/{6CFBE7C8-2686-4F25-A832-E330690E7EAC}/invariant/0</x-item>
+        <x-item>/master/sitecore/Forms/My Account/Page/lastName/{A15FDF29-10D4-419C-A994-A307A8EA40E6}/invariant/0</x-item>
+        <x-item>/master/sitecore/Forms/My Account/Page/save/{B4CE98D9-367F-491C-AC64-3ADB1AFB0230}/invariant/0</x-item>
+        <x-item>/master/sitecore/Forms/My Account/Page/save/SubmitActions/{F1A7677F-5400-422D-9194-6395774E7545}/invariant/0</x-item>
+        <x-item>/master/sitecore/Forms/My Account/Page/save/SubmitActions/Adhere to Face Login/{7A29F287-7157-41D6-93DA-964795125750}/invariant/0</x-item>
+        <x-item>/master/sitecore/Forms/My Account/Page/save/SubmitActions/Upload Contact Avatar/{983098A8-60A6-4D21-BA46-ED7F4E2DFA48}/invariant/0</x-item>
+        <x-item>/master/sitecore/Forms/My Account/Page/Upload Contact Avatar/{78180112-DFA9-4B26-BCAF-2A949ADAF8BB}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Form</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/content/Home/Account/{9611A5B1-5C9E-4734-967C-B60B464BB800}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Login/{643E1961-0098-41BF-A1C3-C786EFB83907}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Pages</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Contact Avatar/{3E6D84E8-C290-4B5A-A08D-B6BBFBDC2319}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Contact Avatar/Details/{39975EC5-B097-4D9F-8ABC-18F30D1B1CB1}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Contact Avatar/Details/Extra Parameters/{87A9604D-9BD8-4941-99E7-EA5E3B988F9E}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Contact Avatar/Details/Thumbnail Height/{86FD3095-275F-4902-863F-091DFDC6E993}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Contact Avatar/Details/Thumbnail Width/{562B0B6E-8DF2-400C-8DA0-5EF98C8CE62E}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Contact Avatar/Styling/{93458A7D-5CAD-4776-A264-178942A479F9}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Upload Contact Avatar/{AED7F8FF-C4DB-4218-9FF1-D0393A9D4709}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Upload Contact Avatar/Details/{1835A278-F881-4944-BA63-FBF8CC682E5C}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Upload Contact Avatar/Styling/{3E883C39-8AF7-4156-83CF-746F7D4E9F09}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Core</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Foundation/Foundation.Kairos.config</x-item>
+        <x-item>/App_Config/Include/Foundation/Foundation.XConnect.config</x-item>
+        <x-item>/bin/FaceLogin.Feature.FormExtensions.dll</x-item>
+        <x-item>/bin/FaceLogin.Feature.Login.dll</x-item>
+        <x-item>/bin/FaceLogin.Foundation.Kairos.dll</x-item>
+        <x-item>/bin/FaceLogin.Foundation.Serialization.dll</x-item>
+        <x-item>/bin/FaceLogin.Foundation.XConnect.dll</x-item>
+        <x-item>/bin/FaceLogin.Project.Common.dll</x-item>
+        <x-item>/bin/Kairos.Net.dll</x-item>
+        <x-item>/Views/FormExtensions/AdhereToFaceLogin.cshtml</x-item>
+        <x-item>/Views/FormExtensions/ContactAvatar.cshtml</x-item>
+        <x-item>/Views/FormExtensions/UploadContactAvatar.cshtml</x-item>
+        <x-item>/Views/Layouts/DefaultFormLayout.cshtml</x-item>
+        <x-item>/Views/Layouts/MvcOuterLayout.cshtml</x-item>
+        <x-item>/Views/Login/Index.cshtml</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
