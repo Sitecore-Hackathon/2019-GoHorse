@@ -48,18 +48,18 @@ It's important to check " I agree to use my picture for Face Login", this is a i
 Click on the "Save action"
 The Page will reload, and show up your picture
 
-![[Account Page](images/account.jpg?raw=true "facelogin")
+![Account Page](images/account.jpg?raw=true "facelogin")
 
 Authentication Step 
 Access "Login" page on your local Sitecore Instace Ex : https://sc910.sc/login (make sure you use HTTPS, it's a requirement)
 The Browser should ask permission to acess your camera and take your picture, Click "Allow" (this step will fail if you are under http)
 Click on the button "Face login" , the application will tae your picture and send you to another page in case of success
 
-![[Login Page](images/facelogin.jpg?raw=true "facelogin")
+![Login Page](images/facelogin.jpg?raw=true "facelogin")
 
-![Login Successful](images/LoginSuccessful.jpg?raw=true "Successful")
+![Login Successful](images/loginsuccessful.jpg?raw=true "Successful")
 
-![Hackathon Logo](images/hackathon.jpg?raw=true "Hackathon Logo")
+![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
 
 You can embed images of different formats too:
 
