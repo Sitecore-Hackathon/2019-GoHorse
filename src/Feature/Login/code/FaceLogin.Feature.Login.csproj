@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.Login.Serialization.config" />
-    <None Include="Properties\PublishProfiles\Standalone.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Views\Web.config" />
     <None Include="Web.config" />
   </ItemGroup>

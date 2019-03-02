@@ -1,15 +1,13 @@
 ﻿using FaceLogin.Foundation.XConnect.Facets;
 using Sitecore.XConnect;
 using Sitecore.XConnect.Schema;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace FaceLogin.Foundation.XConnect.Models
 {
     public class FaceLoginDefineModel
     {
+        public static XdbModel Model { get; } = BuildModel();
+
         private static XdbModel BuildModel()
         {
             var builder = new XdbModelBuilder("FaceLoginDefineModel", new XdbModelVersion(1, 0));

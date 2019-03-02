@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Config\Include\Foundation\Foundation.Kairos.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -92,7 +93,10 @@
     <Compile Include="Configurations.cs" />
     <Compile Include="Extensions\KairosClientExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Responses\GalleryRemoveResponse.cs" />
+    <Compile Include="Services\IImageService.cs" />
     <Compile Include="Services\IKairosService.cs" />
+    <Compile Include="Services\ImageService.cs" />
     <Compile Include="Services\KairosService.cs" />
   </ItemGroup>
   <ItemGroup>

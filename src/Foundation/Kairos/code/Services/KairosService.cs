@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web;
+using FaceLogin.Foundation.Kairos.Extensions;
 
 namespace FaceLogin.Foundation.Kairos.Services
 {
-    public class KairosService
+    public class KairosService : IKairosService
     {
         private readonly KairosClient _kairosClient;
 

@@ -43,9 +43,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Kairos.Net, Version=1.0.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Kairos.Net.1.0.11\lib\net45\Kairos.Net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\RestSharp.105.2.3\lib\net46\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.ExperienceForms, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.ExperienceForms.2.0.0\lib\net471\Sitecore.ExperienceForms.dll</HintPath>
@@ -112,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.FormExtensions.Serialization.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <None Include="Views\Web.config" />
     <None Include="Web.config" />
@@ -141,6 +148,10 @@
     <ProjectReference Include="..\..\..\Foundation\XConnect\FaceLogin.Foundation.XConnect\FaceLogin.Foundation.XConnect.csproj">
       <Project>{B2CB7F66-5B56-4149-9415-E2DD6EB391C3}</Project>
       <Name>FaceLogin.Foundation.XConnect</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Login\code\FaceLogin.Feature.Login.csproj">
+      <Project>{16d606d2-e438-4bd2-8fdf-ec30ff7b63a3}</Project>
+      <Name>FaceLogin.Feature.Login</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

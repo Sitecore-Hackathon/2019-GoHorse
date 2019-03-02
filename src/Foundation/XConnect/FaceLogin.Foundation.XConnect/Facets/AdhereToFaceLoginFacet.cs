@@ -1,6 +1,4 @@
-﻿using System;
-using Sitecore.XConnect;
-using Sitecore.XConnect.Collection.Model;
+﻿using Sitecore.XConnect;
 
 namespace FaceLogin.Foundation.XConnect.Facets
 {

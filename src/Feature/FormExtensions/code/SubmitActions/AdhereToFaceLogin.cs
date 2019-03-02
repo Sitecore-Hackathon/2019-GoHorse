@@ -3,7 +3,11 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using FaceLogin.Feature.FormExtensions.Fields;
+using FaceLogin.Feature.Login;
+using FaceLogin.Foundation.Kairos;
+using FaceLogin.Foundation.Kairos.Extensions;
 using FaceLogin.Foundation.Kairos.Services;
+using FaceLogin.Foundation.XConnect.Extensions;
 using FaceLogin.Foundation.XConnect.Facets;
 using FaceLogin.Foundation.XConnect.Services;
 using Sitecore.Diagnostics;
@@ -44,7 +48,7 @@ namespace FaceLogin.Feature.FormExtensions.SubmitActions
                     var kairosService = DependencyResolver.Current.GetService<IKairosService>();
 
                     var contact = xConnectService.GetCurrentContact(AdhereToFaceLoginFacet.DefaultFacetKey);
-                    var subjectId = $"FaceLogin_{contact.Id}";
+                    var subjectId = $"{Login.Constants.Identifiers.FaceIdentifier}_{contact.Id}";
 
                     var consentObject = contact.GetFacet<AdhereToFaceLoginFacet>(AdhereToFaceLoginFacet.DefaultFacetKey);
                     var isAllowedInContact = consentObject != null && consentObject.FaceRecognitionAllowed;
@@ -64,12 +68,12 @@ namespace FaceLogin.Feature.FormExtensions.SubmitActions
                             }
 
                             // Save new Identifier to XDB
-                            xConnectService.AddContactIdentifier(contact, "FaceLogin", subjectId);
+                            xConnectService.AddContactIdentifier(contact, Login.Constants.Identifiers.FaceIdentifier, subjectId);
                         }
                         else
                         {
                             // Disable in Kairos
-                            var removeResponse = kairosService.Client().RemoveSubject(subjectId, Constants.Config.KairosGalleryName);
+                            var removeResponse = kairosService.Client().RemoveSubject(subjectId, Configurations.Config.KairosGalleryName);
                             if (removeResponse.Errors.Any())
                             {
                                 var msg = new StringBuilder();
@@ -80,7 +84,7 @@ namespace FaceLogin.Feature.FormExtensions.SubmitActions
                             }
 
                             // Remove Identifier from XDB
-                            xConnectService.RemoveContactIdentifier(contact, "FaceLogin");
+                            xConnectService.RemoveContactIdentifier(contact, Constants.Identifiers.FaceIdentifier);
                         }
 
                         // Update XConnect
