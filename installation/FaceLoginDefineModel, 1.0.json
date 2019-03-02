@@ -1,0 +1,33 @@
+{
+  "Name": "FaceLoginDefineModel",
+  "Version": "1.0",
+  "References": [
+    {
+      "Name": "XConnect",
+      "Version": "1.0"
+    },
+    {
+      "Name": "Sitecore.XConnect.Collection.Model",
+      "Version": "9.0"
+    }
+  ],
+  "Types": {
+    "FaceLogin.Foundation.XConnect.Facets.AdhereToFaceLoginFacet": {
+      "Type": "Facet",
+      "BaseType": "Sitecore.XConnect.Facet",
+      "ClrType": "FaceLogin.Foundation.XConnect.Facets.AdhereToFaceLoginFacet, FaceLogin.Foundation.XConnect, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Properties": {
+        "FaceRecognitionAllowed": {
+          "Type": "Boolean"
+        }
+      }
+    }
+  },
+  "Facets": [
+    {
+      "Target": "Contact",
+      "Name": "AdhereToFaceLoginFacet",
+      "Type": "FaceLogin.Foundation.XConnect.Facets.AdhereToFaceLoginFacet"
+    }
+  ]
+}
