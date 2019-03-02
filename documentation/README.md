@@ -11,30 +11,30 @@ Face Login Parts
 
 A) Sitecore CUSTOM FIELDS and SUBMIT ACTIONS to allow:
 
-	1. Reading and writting the Avatar of the current contact
-	* Field Types: 
+1. Reading and writting the Avatar of the current contact
+* Field Types: 
 		/sitecore/system/Settings/Forms/Field Types/Basic/Contact Avatar
 		/sitecore/system/Settings/Forms/Field Types/Basic/Upload Contact Avatar
-	* Submit Action: 
+* Submit Action: 
 		/sitecore/system/Settings/Forms/Submit Actions/Face Login/Upload Contact Avatar
 
-	2. Subscribing and Unsubscribing from the (cloud) Face Detection program (This part is important to mitigate privacy concerns)	
-	-- The Face Recognition works as biometric ID of the person - just as fingerprint scanners
-	-- When the user opts-out, his information is totally removed from the cloud Face API, and thus no Face Login is allowed with that face.
-	* Field Types: 
+2. Subscribing and Unsubscribing from the (cloud) Face Detection program (This part is important to mitigate privacy concerns)	
+* The Face Recognition works as biometric ID of the person - just as fingerprint scanners
+When the user opts-out, his information is totally removed from the cloud Face API, and thus no Face Login is allowed with that face.
+* Field Types: 
 		/sitecore/system/Settings/Forms/Field Types/Basic/Adhere to Face Login
-	* Submit Action: 
+* Submit Action: 
 		/sitecore/system/Settings/Forms/Submit Actions/Face Login/Adhere to Face Login
 
 B) Custom Component to allow Face Login (biometric authentication)
 /sitecore/layout/Renderings/Feature/Login/Face Login
-	1. Face Login requires a Webcam, HTTPS connection
-	2. Requires that user gives permission to the browser to access the webcam
-	3. Needs good light to capture a good image
+1. Face Login requires a Webcam, HTTPS connection
+2. Requires that user gives permission to the browser to access the webcam
+3. Needs good light to capture a good image
 
 C) Demo Content
-	-- My Account form with Avatar Upload and Opt-in checkbox
-	-- Demo pages under /sitecore/content/Home
+- My Account form with Avatar Upload and Opt-in checkbox
+- Demo pages under /sitecore/content/Home
 
 ## Pre-requisites
 
