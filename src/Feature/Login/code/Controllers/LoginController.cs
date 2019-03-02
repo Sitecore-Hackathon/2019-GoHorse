@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Configuration;
 using System.Web.Mvc;
+using FaceLogin.Foundation.Kairos;
 using FaceLogin.Foundation.XConnect.Services;
 
 namespace FaceLogin.Feature.Login.Controllers
@@ -19,7 +21,7 @@ namespace FaceLogin.Feature.Login.Controllers
         {
             try
             {
-                return Json(_xConnectService.FaceLogin(Constants.Identifiers.FaceIdentifier, base64));
+                return Json(_xConnectService.FaceLogin(Configurations.Config.XConnectFaceIdentifierName, base64));
             }
             catch (Exception ex)
             {

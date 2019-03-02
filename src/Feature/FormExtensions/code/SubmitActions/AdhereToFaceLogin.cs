@@ -14,6 +14,7 @@ using Sitecore.Diagnostics;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Processing;
 using Sitecore.ExperienceForms.Processing.Actions;
+using Sitecore.XConnect.Collection.Model;
 using static System.FormattableString;
 
 namespace FaceLogin.Feature.FormExtensions.SubmitActions
@@ -47,14 +48,19 @@ namespace FaceLogin.Feature.FormExtensions.SubmitActions
                     var xConnectService = DependencyResolver.Current.GetService<IXConnectService>();
                     var kairosService = DependencyResolver.Current.GetService<IKairosService>();
 
-                    var contact = xConnectService.GetCurrentContact(AdhereToFaceLoginFacet.DefaultFacetKey);
-                    var subjectId = $"{Login.Constants.Identifiers.FaceIdentifier}_{contact.Id}";
+                    var contact = xConnectService.GetCurrentContact(PersonalInformation.DefaultFacetKey, AdhereToFaceLoginFacet.DefaultFacetKey);
+                    var subjectId = $"{Configurations.Config.XConnectFaceIdentifierName}_{contact.Id}";
 
                     var consentObject = contact.GetFacet<AdhereToFaceLoginFacet>(AdhereToFaceLoginFacet.DefaultFacetKey);
                     var isAllowedInContact = consentObject != null && consentObject.FaceRecognitionAllowed;
                     var isAllowedInForm = adhereField.Value;
                     if (isAllowedInForm != isAllowedInContact)
                     {
+                        //var firstName = "Test";
+                        //var lastName = "GoHorse";                        
+                        //if (contact.Personal()==null || contact.Personal().FirstName!=firstName && contact.Personal().LastName!=lastName)
+                        //    xConnectService.UpdateContactPersonal(contact, firstName, lastName);
+
                         if (isAllowedInForm)
                         {
                             // Enable in Kairos
@@ -68,7 +74,7 @@ namespace FaceLogin.Feature.FormExtensions.SubmitActions
                             }
 
                             // Save new Identifier to XDB
-                            xConnectService.AddContactIdentifier(contact, Login.Constants.Identifiers.FaceIdentifier, subjectId);
+                            xConnectService.AddContactIdentifier(contact, Configurations.Config.XConnectFaceIdentifierName, subjectId);
                         }
                         else
                         {
@@ -84,11 +90,11 @@ namespace FaceLogin.Feature.FormExtensions.SubmitActions
                             }
 
                             // Remove Identifier from XDB
-                            xConnectService.RemoveContactIdentifier(contact, Constants.Identifiers.FaceIdentifier);
+                            xConnectService.RemoveContactIdentifier(contact, Configurations.Config.XConnectFaceIdentifierName);
                         }
 
                         // Update XConnect
-                        if (!xConnectService.UpdateContactBookshelfConsent(contact, isAllowedInForm))
+                        if (!xConnectService.UpdateContactConsent(contact, isAllowedInForm))
                         {
                             formSubmitContext.Errors.Add(new FormActionError { ErrorMessage = "Error updating Adhere to Face Login" });
                             return false;
