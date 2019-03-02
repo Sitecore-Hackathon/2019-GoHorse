@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {1835A278-F881-4944-BA63-FBF8CC682E5C}
+database: core
+path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Upload Contact Avatar/Details
+parent: {AED7F8FF-C4DB-4218-9FF1-D0393A9D4709}
+name: Details
+master: {00000000-0000-0000-0000-000000000000}
+template: {F698FE6D-35CA-4783-B36C-34928F3A23F2}
+templatekey: FormSection
+created: 20190302T035132Z
+
+----field----
+field: {91194D47-8DF3-43E3-8310-67B718CE2C93}
+name: ConfigurationItem
+key: configurationitem
+content-length: 106
+
+sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Common/Sections
+----field----
+field: {00FDAB55-3A4A-4376-B786-7EA959BB0057}
+name: ControlDefinitions
+key: controldefinitions
+content-length: 311
+
+{FF5E82DD-DE3F-4CFF-B7ED-CC57ACBF5031}|{362DF97E-0B79-477E-906A-F830DF8D882D}|{45237C46-3DF0-4F9F-9AD3-4B7A8B678A7D}|{3C873F0C-CFF4-4B1A-B8BC-DD4AEC5005BA}|{3AC01BCB-FF1A-4BD5-BDBC-EA4DB9BE8215}|{88F4330D-9A53-43EF-B173-2937945FDD5D}|{562B0B6E-8DF2-400C-8DA0-5EF98C8CE62E}|{86FD3095-275F-4902-863F-091DFDC6E993}
+----version----
+language: en
+version: 1
+revision: 4075dfaa-91fb-4a26-85e7-88706e42dc37
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T023806Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4075dfaa-91fb-4a26-85e7-88706e42dc37
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T034057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

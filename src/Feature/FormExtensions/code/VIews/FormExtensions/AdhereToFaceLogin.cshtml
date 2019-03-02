@@ -1,0 +1,8 @@
+﻿@using Sitecore.ExperienceForms.Mvc.Html
+@model FaceLogin.Feature.FormExtensions.Fields.AdhereToFaceLoginViewModel
+
+<label class="@Model.LabelCssClass">
+    <input type="checkbox" id="@Html.IdFor(m => Model.Value)" name="@Html.NameFor(m => Model.Value)" class="@Model.CssClass"@if (Model.Value) {<text> checked="checked"</text>} value="true" data-sc-tracking="@Model.IsTrackingEnabled" data-sc-field-name="@Model.Name" data-sc-field-key="@Model.ConditionSettings.FieldKey" @Html.GenerateUnobtrusiveValidationAttributes(m => Model.Value)/>@Html.DisplayTextFor(t => Model.Title)
+    <input type="hidden" name="@Html.NameFor(m => Model.Value)" value="false"/>
+</label>
+@Html.ValidationMessageFor(m => Model.Value)

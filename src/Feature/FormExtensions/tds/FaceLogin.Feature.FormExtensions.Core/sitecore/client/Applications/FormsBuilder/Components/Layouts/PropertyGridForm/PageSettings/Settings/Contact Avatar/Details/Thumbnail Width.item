@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {562B0B6E-8DF2-400C-8DA0-5EF98C8CE62E}
+database: core
+path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Contact Avatar/Details/Thumbnail Width
+parent: {39975EC5-B097-4D9F-8ABC-18F30D1B1CB1}
+name: Thumbnail Width
+master: {00000000-0000-0000-0000-000000000000}
+template: {DD74148E-E8FC-4774-8CBA-BAFDB76A4E47}
+templatekey: FormTextBox Parameters
+created: 20190302T023933Z
+
+----field----
+field: {A176E7B0-1C0B-4F2E-A494-2DF342A75C0E}
+name: IsLabelOnTop
+key: islabelontop
+content-length: 1
+
+1
+----field----
+field: {3E079FC3-6B2D-41C9-9204-374A786FC761}
+name: BindingConfiguration
+key: bindingconfiguration
+content-length: 20
+
+thumbnailWidth=Value
+----field----
+field: {0D4453FE-42A3-4A13-83E7-73D5E192CD86}
+name: IsReadOnly
+key: isreadonly
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 7f25da8e-a728-4952-a382-a68693cb834e
+
+----field----
+field: {3885A716-2EED-47AE-9132-32225F0458FF}
+name: FormLabel
+key: formlabel
+content-length: 15
+
+Thumbnail Width
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T023933Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7f25da8e-a728-4952-a382-a68693cb834e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T062627Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

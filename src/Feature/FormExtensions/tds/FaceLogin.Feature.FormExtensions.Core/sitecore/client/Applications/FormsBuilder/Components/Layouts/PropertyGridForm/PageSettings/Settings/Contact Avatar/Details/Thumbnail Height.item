@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {86FD3095-275F-4902-863F-091DFDC6E993}
+database: core
+path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Contact Avatar/Details/Thumbnail Height
+parent: {39975EC5-B097-4D9F-8ABC-18F30D1B1CB1}
+name: Thumbnail Height
+master: {00000000-0000-0000-0000-000000000000}
+template: {DD74148E-E8FC-4774-8CBA-BAFDB76A4E47}
+templatekey: FormTextBox Parameters
+created: 20190302T023950Z
+
+----field----
+field: {A176E7B0-1C0B-4F2E-A494-2DF342A75C0E}
+name: IsLabelOnTop
+key: islabelontop
+content-length: 1
+
+1
+----field----
+field: {3E079FC3-6B2D-41C9-9204-374A786FC761}
+name: BindingConfiguration
+key: bindingconfiguration
+content-length: 21
+
+thumbnailHeight=Value
+----version----
+language: en
+version: 1
+revision: 48f64edf-2a7c-4df3-9ef3-af4e20d220f4
+
+----field----
+field: {3885A716-2EED-47AE-9132-32225F0458FF}
+name: FormLabel
+key: formlabel
+content-length: 16
+
+Thumbnail Height
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T023950Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+48f64edf-2a7c-4df3-9ef3-af4e20d220f4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T031949Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

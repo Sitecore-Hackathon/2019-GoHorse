@@ -15,6 +15,8 @@ namespace FaceLogin.Feature.FormExtensions.Fields
 
             var xConnectService = DependencyResolver.Current.GetService<IXConnectService>();
             var contact = xConnectService.GetCurrentContact(AdhereToFaceLoginFacet.DefaultFacetKey);
+            if (contact == null)
+                return;
             var consentObject = contact.GetFacet<AdhereToFaceLoginFacet>(AdhereToFaceLoginFacet.DefaultFacetKey);
             var isAllowedInContact = consentObject != null && consentObject.FaceRecognitionAllowed;
             Value = isAllowedInContact;
