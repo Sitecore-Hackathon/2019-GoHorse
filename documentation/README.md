@@ -1,50 +1,42 @@
 # Documentation
 
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
-
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
-Examples of things to include are the following.
-
 ## Summary
 
-**Category:** Hackathon Category
+**Category:** Best use of xConnect and/or Universal Tracker
 
-What is the purpose of your module? What problem does it solve and how does it do that?
+Users have to go through long process in order to create an account in any site.
+This module enables authentication via face recognition by integrating xConnect and external face recognization API named Kairos. The image of the face is either previously captured via publicly available information (social medias, etc) or via registration. The user image and data is thus store in xDb via xConnect.
 
 ## Pre-requisites
 
-Does your module rely on other Sitecore modules or frameworks?
+This module depends on the following
 
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
+- Sitecore 9.1 Initial Release
+- Sitecore instance must be configured to use SSL/HTTPS
+- A subscription to [Kairos Face Recognition](https://www.kairos.com) cloud API - you might signup for a free 14 days trial
 
 ## Installation
 
-Provide detailed instructions on how to install the module, and include screenshots where necessary.
-
 1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ???
-3. Profit
+2. Update the configuration file `App_Config\Include\Foundation\Foundation.Kairos.config` with the Kairos API id and key from your subscription (see below)
+3. Copy the file [FaceLoginDefineModel, 1.0.json](/installation/FaceLoginDefineModel%2C%201.0.json) to the following location: `[XConnect Installation]\App_Data\jobs\continuous\IndexWorker\App_data\Models`, `[XConnect Installation]\App_Data\jobs\continuous\ProcessingEngine\App_Data\Models` and `[XConnect Installation]\App_Data\Models`.
 
 ## Configuration
 
-How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
-
-Remember you are using Markdown, you can provide code samples too:
+Once the module is configured, update the entries `FaceLogin.Kairos_ApplicationID` and `FaceLogin.Kairos_ApplicationKey` in the configuration file `App_Config\Include\Foundation\Foundation.Kairos.config` with the Kairos API id and key from your subscription.
 
 ```xml
 <?xml version="1.0"?>
-<!--
-  Purpose: Configuration settings for my hackathon module
--->
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <settings>
-      <setting name="MyModule.Setting" value="Hackathon" />
-    </settings>
-  </sitecore>
+<configuration xmlns:patch="http://www.sitecore.net/xmlconfig">
+    <sitecore>
+        <settings>
+            <setting name="FaceLogin.Kairos_GalleryName" value="FaceLogin" />
+            <setting name="FaceLogin.Kairos_ApplicationID" value="YOUR APPLICATION ID" />
+            <setting name="FaceLogin.Kairos_ApplicationKey" value="YOUR APPLICATION KEY" />
+            <setting name="FaceLogin.MinimumConfidence" value="0.60" />
+            <setting name="FaceLogin.MinimumQuality" value="0.60" />
+        </settings>
+    </sitecore>
 </configuration>
 ```
 
