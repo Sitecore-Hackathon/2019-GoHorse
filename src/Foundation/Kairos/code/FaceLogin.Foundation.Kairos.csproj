@@ -84,7 +84,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Config\Include\Foundation\Foundation.Kairos.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.Kairos.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <None Include="Web.config" />
