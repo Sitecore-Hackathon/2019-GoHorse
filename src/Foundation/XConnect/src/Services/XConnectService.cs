@@ -6,7 +6,9 @@ using System.Linq;
 using System.Text;
 using FaceLogin.Foundation.Kairos;
 using FaceLogin.Foundation.Kairos.Services;
+using Sitecore.Analytics.Model;
 using Sitecore.Analytics.Tracking;
+using Sitecore.Data;
 using Contact = Sitecore.XConnect.Contact;
 
 namespace FaceLogin.Foundation.XConnect.Services
@@ -33,6 +35,7 @@ namespace FaceLogin.Foundation.XConnect.Services
 
         public Contact GetCurrentContact(params string[] facets)
         {
+            var manager = Sitecore.Configuration.Factory.CreateObject("tracking/contactManager", true) as ContactManager;
             using (var client = Sitecore.XConnect.Client.Configuration.SitecoreXConnectClientConfiguration.GetClient())
             {
                 try
@@ -49,6 +52,19 @@ namespace FaceLogin.Foundation.XConnect.Services
                         contactId);
                     var contact = client.Get<Contact>(trackerIdentifier,
                         new ContactExpandOptions(facets));
+
+                    if (contact == null && manager!=null)
+                    {
+                        manager.CreateContact(ID.NewID);
+                        if (Sitecore.Analytics.Tracker.Current != null &&
+                            Sitecore.Analytics.Tracker.Current.Contact != null &&
+                            Sitecore.Analytics.Tracker.Current.Contact.IsNew)
+                        {
+                            Sitecore.Analytics.Tracker.Current.Contact.ContactSaveMode = ContactSaveMode.AlwaysSave;
+                            manager.SaveContactToCollectionDb(Sitecore.Analytics.Tracker.Current.Contact);
+                        }
+                    }
+
                     return contact;
                 }
                 catch (XdbExecutionException ex)
