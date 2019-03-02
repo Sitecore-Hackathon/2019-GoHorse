@@ -1,16 +1,14 @@
 ﻿using Kairos.Net;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Web;
 using FaceLogin.Foundation.Kairos.Extensions;
 
 namespace FaceLogin.Foundation.Kairos.Services
 {
     public class KairosService : IKairosService
     {
-        private readonly KairosClient _kairosClient;
+        private readonly KairosClient _kairosClient;       
 
         public KairosService()
         {
@@ -120,6 +118,5 @@ namespace FaceLogin.Foundation.Kairos.Services
             var enrollResponse = _kairosClient.Enroll(imageBase64, subjectId, Configurations.Config.KairosGalleryName, "FRONTAL");
             return enrollResponse;
         }
-
     }
 }

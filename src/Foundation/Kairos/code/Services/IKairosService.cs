@@ -7,6 +7,6 @@ namespace FaceLogin.Foundation.Kairos.Services
         KairosClient Client();
         string EnrollPictureString(string base64, string subjectId);
         object EnrollPicture(string base64, string subjectId);
-        EnrollResponse Enroll(string subjectId, string imageBase64);
+        EnrollResponse Enroll(string subjectId, string imageBase64);        
     }
 }

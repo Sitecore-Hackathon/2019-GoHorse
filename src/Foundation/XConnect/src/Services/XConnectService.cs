@@ -3,17 +3,23 @@ using Sitecore.XConnect;
 using Sitecore.XConnect.Client;
 using Sitecore.XConnect.Collection.Model;
 using System.Linq;
+using System.Text;
+using FaceLogin.Foundation.Kairos;
 using FaceLogin.Foundation.Kairos.Services;
+using Sitecore.Analytics.Tracking;
+using Contact = Sitecore.XConnect.Contact;
 
 namespace FaceLogin.Foundation.XConnect.Services
 {
     public class XConnectService : IXConnectService
     {
         private readonly IImageService _imageService;
+        private readonly IKairosService _kairosService;
 
-        public XConnectService(IImageService imageService)
+        public XConnectService(IImageService imageService, IKairosService kairosService)
         {
             _imageService = imageService;
+            _kairosService = kairosService;
         }
 
         public Contact GetCurrentContact()
@@ -238,6 +244,46 @@ namespace FaceLogin.Foundation.XConnect.Services
                     return false;
                 }
             }
+        }
+
+        public object FaceLogin(string identifierName, string base64)
+        {
+            // Recognize Face
+            var recognizeResponse = _kairosService.Client().Recognize(base64, Configurations.Config.KairosGalleryName);
+
+            // Error handling
+            if (recognizeResponse.Errors.Any())
+            {
+                var msg = new StringBuilder();
+                foreach (var error in recognizeResponse.Errors)
+                    msg.AppendLine($"{error.Message} ({error.ErrCode})");
+                return new { success = false, message = msg.ToString(), faceError = true };
+            }
+
+            // Face recognized?
+            var images = recognizeResponse.Images.FirstOrDefault();
+            var isFaceRecognized = images?.Transaction != null && images.Transaction.status == "success";
+            if (!isFaceRecognized)
+                return new { success = false, message = "Your face has not been recognized" };
+
+            // Will identify contact in Sitecore
+            var subjectId = images.Transaction.subject_id;
+
+            // Identify Contact
+            Identify(identifierName, subjectId);
+
+            // Return Success
+            return new { success = true, message = "Success" };
+        }
+
+        public void Identify(string identifierName, string identifierValue)
+        {
+            if (!(Sitecore.Configuration.Factory.CreateObject("tracking/contactManager", true) is ContactManager manager))
+                return;
+
+            Sitecore.Analytics.Tracker.Current.Session.IdentifyAs(identifierName, identifierValue);
+            Sitecore.Analytics.Tracker.Current.Session.Contact =
+                manager.LoadContact(Sitecore.Analytics.Tracker.Current.Contact.ContactId);
         }
     }
 }

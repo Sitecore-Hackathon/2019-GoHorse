@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {9611A5B1-5C9E-4734-967C-B60B464BB800}
+database: master
+path: /sitecore/content/Home/Account
+parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+name: Account
+master: {00000000-0000-0000-0000-000000000000}
+template: {76036F5E-CBCE-46D1-AF0A-4143F9B557AA}
+templatekey: Sample Item
+created: 20190302T175137Z
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 475
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{9352B091-F826-41EC-9EE7-B12986641C6A}"><r uid="{43222D12-08C9-453B-AE96-D406EBB95126}"><p:d /></r><r uid="{014543CC-25F4-47C7-AB58-AF75A2EDB216}" s:ds="{550C4DDA-A245-4FDC-8513-0E06BB2C921B}" s:id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}" s:par="" s:ph="page" /><r uid="{CF044AD9-0332-407A-ABDE-587214A2C808}"><p:d /></r><r uid="{B343725A-3A93-446E-A9C8-3A2CBD3DB489}"><p:d /></r></d></r>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{A5BC37E7-ED96-4C1E-8590-A26E64DB55EA}
+----version----
+language: en
+version: 1
+revision: 66c59d45-d0ab-4b42-a1e7-953d8d95c845
+
+----field----
+field: {75577384-3C97-45DA-A847-81B00500E250}
+name: Title
+key: title
+content-length: 10
+
+My Account
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T175137Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+66c59d45-d0ab-4b42-a1e7-953d8d95c845
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T180031Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{FCA998C5-0CC3-4F91-94D8-0A4E6CAECE88}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

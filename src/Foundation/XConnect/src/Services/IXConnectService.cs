@@ -13,5 +13,7 @@ namespace FaceLogin.Foundation.XConnect.Services
         bool RemoveContactIdentifier(Contact contact, string identifierName);
         bool UpdateContactBookshelfConsent(Contact contact, bool consent);
         bool UpdateContactAvatar(Contact contact, string avatar);
+        object FaceLogin(string identifierName, string base64);
+        void Identify(string identifierName, string identifierValue);
     }
 }
