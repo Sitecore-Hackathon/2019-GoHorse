@@ -5,7 +5,7 @@
 **Category:** Best use of xConnect and/or Universal Tracker
 
 Users have to go through long process in order to create an account in any site.
-This module enables authentication via face recognition by integrating xConnect and external face recognization API named Kairos. The image of the face is either previously captured via publicly available information (social medias, etc) or via registration. The user image and data is thus store in xDb via xConnect.
+This module enables authentication via face recognition by integrating xConnect and external face recognization API named Kairos. The image of the face is either previously captured via publicly available information (social medias, etc) or via registration. The user image and data is thus storde in xDb via xConnect.
 
 Face Login Parts
 
@@ -19,7 +19,7 @@ A) Sitecore CUSTOM FIELDS and SUBMIT ACTIONS to allow:
 		/sitecore/system/Settings/Forms/Submit Actions/Face Login/Upload Contact Avatar
 
 2. Subscribing and Unsubscribing from the (cloud) Face Detection program (This part is important to mitigate privacy concerns)	
-* The Face Recognition works as biometric ID of the person - just as fingerprint scanners
+* The Face Recognition works as biometric ID of a person - just as fingerprint scanners
 When the user opts-out, his information is totally removed from the cloud Face API, and thus no Face Login is allowed with that face.
 * Field Types: 
 		/sitecore/system/Settings/Forms/Field Types/Basic/Adhere to Face Login
@@ -73,7 +73,7 @@ Once the module is configured, update the entries `FaceLogin.Kairos_ApplicationI
 Sign-in Step
 Access "Account" page on your local Sitecore Instance Example: https://sc910.sc/account (make sure you use HTTPS, it's a requirement)
 Fill the avaliable fields, And select the Image (This image must be a selfie)
-It's important to check " I agree to use my picture for Face Login", this is a important field that will be used.
+It's important to check "I agree to use my picture for Face Login", this is a important field that will be used.
 Click on the "Save action"
 The Page will reload, and show up your picture
 
@@ -82,7 +82,7 @@ The Page will reload, and show up your picture
 Authentication Step 
 Access "Login" page on your local Sitecore Instace Ex: https://sc910.sc/login (make sure you use HTTPS, it's a requirement)
 The Browser should ask permission to acess your camera and take your picture, Click "Allow" (this step will fail if you are under http)
-Click on the button "Face login" , the application will tae your picture and send you to another page in case of success
+Click on the button "Face login", the application will take your picture and redirect to another page in case of success.
 
 ![Login Page](images/facelogin.jpg?raw=true "facelogin")
 
