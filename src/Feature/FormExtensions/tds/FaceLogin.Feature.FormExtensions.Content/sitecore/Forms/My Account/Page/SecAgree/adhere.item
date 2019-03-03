@@ -1,29 +1,22 @@
 ----item----
 version: 1
-id: {6CFBE7C8-2686-4F25-A832-E330690E7EAC}
+id: {430F93ED-DB64-4002-863A-E962865348BC}
 database: master
-path: /sitecore/Forms/My Account/Page/firstName
-parent: {A5E9B77A-10E1-4B62-BAD9-33DCF24EFA65}
-name: firstName
+path: /sitecore/Forms/My Account/Page/SecAgree/adhere
+parent: {872BA1C9-4AB1-4869-884D-71BDF62DE0A5}
+name: adhere
 master: {00000000-0000-0000-0000-000000000000}
-template: {0908030B-4564-42EA-A6FA-C7A5A2D921A8}
-templatekey: Input
-created: 20190302T014651Z
+template: {2F07293C-077F-456C-B715-FDB791ACB367}
+templatekey: Checkbox
+created: 20190302T100642Z
 
 ----field----
-field: {9F7DA002-7B86-436B-8DDA-7EFE5837B88E}
-name: Min Length
-key: min length
-content-length: 1
+field: {3C05A626-A3B1-4CBC-BF67-198537A13E20}
+name: Default Value
+key: default value
+content-length: 0
 
-0
-----field----
-field: {71061C01-A495-4BF3-A52C-D378346BFAE2}
-name: Max Length
-key: max length
-content-length: 3
 
-255
 ----field----
 field: {8A43AF61-0812-4B37-A343-96CDE3F12BB1}
 name: Required
@@ -72,14 +65,14 @@ name: Field Type
 key: field type
 content-length: 38
 
-{4EE89EA7-CEFE-4C8E-8532-467EF64591FC}
+{C9C99334-E562-4CFB-9581-D45D541FE9FE}
 ----field----
 field: {84ECE662-5034-40CB-9C60-744DB64BB294}
 name: Field Key
 key: field key
 content-length: 32
 
-92A79614B8294584BE25243A13C83478
+49210DE9C2DF4602B2143F65676675E7
 ----field----
 field: {71C6DE8E-4718-4977-B83E-B49552EE14B0}
 name: Conditions
@@ -111,64 +104,36 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: a30528c4-f092-4146-bf4b-fa0cacac0d90
+revision: 08702503-a242-4e80-879c-40c2f200e979
 
 ----field----
 field: {71FFD7B2-8B09-4F7B-8A66-1E4CEF653E8D}
 name: Title
 key: title
-content-length: 10
+content-length: 41
 
-First Name
-----field----
-field: {A6972F08-CBB5-4830-A8C9-8A0AE34650D1}
-name: Placeholder Text
-key: placeholder text
-content-length: 0
-
-
-----field----
-field: {B775BCA9-2605-4D60-B367-A0C354BE2504}
-name: Default Value
-key: default value
-content-length: 0
-
-
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
+ I agree to use my picture for Face Login
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20190302T014651Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20190302T100642Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a30528c4-f092-4146-bf4b-fa0cacac0d90
+08702503-a242-4e80-879c-40c2f200e979
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190302T110351Z
+20190303T000604Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
