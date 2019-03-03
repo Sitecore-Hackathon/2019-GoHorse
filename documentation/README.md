@@ -46,7 +46,7 @@ This module depends on the following
 
 ## Installation
 
-1. Use the Sitecore Installation wizard to install the [package](/sc.package/Face%20Login-1.0.zip)
+1. Use the Sitecore Installation wizard to install the [package](/sc.package/Face%20Login-1.1.zip)
 2. Update the configuration file `App_Config\Include\Foundation\Foundation.Kairos.config` with the Kairos API id and key from your subscription (see below)
 3. Copy the file [FaceLoginDefineModel, 1.0.json](/installation/FaceLoginDefineModel%2C%201.0.json) to the following location: `[XConnect Installation]\App_Data\jobs\continuous\IndexWorker\App_data\Models`, `[XConnect Installation]\App_Data\jobs\continuous\ProcessingEngine\App_Data\Models` and `[XConnect Installation]\App_Data\Models`.
 
