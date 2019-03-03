@@ -59,6 +59,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home\Accoun Saved.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home\Account.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
